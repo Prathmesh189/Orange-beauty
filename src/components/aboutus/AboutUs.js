@@ -4,9 +4,9 @@ const AboutUs = () => {
   return (
     <section className="bg-gray-100 p-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-6 text-gray-800">About Us</h1>
+        <h1 className="text-4xl font-bold text-center mb-6 text-gray-800">Welcome to our beauty parlor!</h1>
         <p className="text-lg text-gray-600 text-center mb-12">
-          Welcome to our beauty parlor! We are dedicated to enhancing your natural beauty
+           We are dedicated to enhancing your natural beauty
           through our exceptional services and products.
         </p>
 
