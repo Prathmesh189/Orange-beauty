@@ -10,11 +10,11 @@ import service4 from '../../images/service4.jpeg';
 const carouselSettings = {
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 400,
   slidesToShow: 3,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 2000,
   responsive: [
     {
       breakpoint: 1024,
@@ -32,8 +32,8 @@ const carouselSettings = {
 };
 
 const ServicesCarousel = () => (
-  <section className="services-carousel py-12 bg-gray-200 text-center">
-    <h2 className="text-3xl font-semibold mb-6">✨ Our Most Popular Services! ✨</h2>
+  <section className="services-carousel py-12 text-center bg-gradient-to-b from-orange-50 to-white">
+    <h2 className="text-5xl font-bold text-center mb-6 text-orange-700"> Our Most Popular Services! </h2>
     <Slider {...carouselSettings}>
       {[
         { image: service1, title: "Luxurious Hair Treatments" },
@@ -47,7 +47,8 @@ const ServicesCarousel = () => (
             alt={service.title} 
             className="w-full h-64 object-cover rounded-lg" 
           />
-          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-lg p-2 rounded-b-sm">
+          <br></br>
+          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-0 text-black font-bold text-lg p-2 rounded-b-sm">
             {service.title}
           </div>
         </div>

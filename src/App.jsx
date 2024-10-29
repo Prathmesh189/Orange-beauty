@@ -1,12 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/homepage/HomePage';
-import AboutUs from './components/aboutus/AboutUs';
-import Features from './components/features/Features';
-import IndustriesSection from './components/industries/IndustriesSection';
+import AboutUs from './pages/AboutUs';
+import Features from './pages/Features';
+import ContactUs from './pages/ContactUs';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
-import PricingSection from './components/pricing/PricingSection';
 
 function App() {
   return (
@@ -18,8 +17,8 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/features" element={<Features />} />
-            <Route path="/industries" element={<IndustriesSection />} />
-            <Route path="/pricing" element={<PricingSection />} />
+            <Route path="/contactus" element={<ContactUs />} />
+            
           </Routes>
         </main>
         <Footer />
