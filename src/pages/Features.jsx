@@ -19,7 +19,7 @@ const features = [
   },
   {
     id: 3,
-    title: 'Relaxing Atmosphere',
+    title: 'Calm Atmosphere',
     description: 'Enjoy a serene and relaxing environment designed to make your visit enjoyable.',
     icon: faTshirt,
   },
@@ -48,10 +48,10 @@ const industries = [
     icon: faPaintBrush,
   },
   {
-    title: 'Makeup Services',
-    description: 'Makeup artists for any occasion, ensuring a flawless and customized look every time.',
+    title: 'Makeup',
+    description: 'Expert artists for any occasion, delivering a flawless, customized look.',
     icon: faTshirt,
-  },
+  },  
 ];
 
 const Features = () => {
