@@ -32,8 +32,11 @@ const carouselSettings = {
 };
 
 const ServicesCarousel = () => (
+ 
   <section className="services-carousel py-12 text-center bg-gradient-to-b from-orange-50 to-white">
-    <h2 className="text-5xl font-bold text-center mb-6 text-orange-600"> Our Most Popular Services! </h2>
+    <br></br>
+    <h2 className="text-5xl font-bold text-center mb-6 text-orange-400"> Our Most Popular Services! </h2>
+    <br></br>
     <Slider {...carouselSettings}>
       {[
         { image: service1, title: "Luxurious Hair Treatments" },
@@ -47,13 +50,14 @@ const ServicesCarousel = () => (
             alt={service.title} 
             className="w-full h-64 object-cover rounded-lg" 
           />
-          <br></br>
-          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-0 text-orange-600 font-bold text-lg p-2 rounded-b-sm">
+          <br></br><br></br>
+          <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-0 text-orange-400 font-bold text-lg p-2 rounded-b-sm">
             {service.title}
           </div>
         </div>
       ))}
     </Slider>
+    <br></br><br></br>
   </section>
 );
 

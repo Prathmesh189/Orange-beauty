@@ -11,9 +11,11 @@ const AboutUs = () => {
   return (
     <section className="bg-gradient-to-b from-orange-50 to-white p-8">
       <div className="max-w-7xl mx-auto">
+        <br></br>
+        <br></br>
         {/* Title and Introduction */}
         <motion.h1 
-          className="text-5xl font-bold text-center mb-6 text-orange-600" 
+          className="text-5xl font-bold text-center mb-6 text-orange-400" 
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -22,7 +24,7 @@ const AboutUs = () => {
           Welcome to Orange Ladies Beauty Parlour!
         </motion.h1>
         <motion.p 
-          className="text-xl text-gray-700 text-center mb-12" 
+          className="text-2xl text-gray-700 text-center mb-12" 
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -30,7 +32,7 @@ const AboutUs = () => {
         >
           Discover a sanctuary of beauty and relaxation where our expert team brings out your best self with dedicated, personalized service.
         </motion.p>
-
+        <br></br>
         {/* Mission, Values, Why Choose Us */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {[
@@ -55,15 +57,15 @@ const AboutUs = () => {
               animate="visible"
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
-              <h2 className="text-2xl font-semibold text-orange-600 mb-4">{item.title}</h2>
-              <p className="text-gray-600">{item.description}</p>
+              <h2 className="text-3xl font-semibold text-orange-400 mb-4">{item.title}</h2>
+              <p className="text-xl text-gray-600">{item.description}</p>
             </motion.div>
           ))}
         </div>
-
+        <br></br>
         {/* Meet Our Team Section */}
         <motion.h2 
-          className="text-4xl font-bold text-center mb-6 text-orange-600" 
+          className="text-5xl font-bold text-center mb-6 text-orange-400" 
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -72,7 +74,7 @@ const AboutUs = () => {
           Meet Our Team
         </motion.h2>
         <motion.p 
-          className="text-lg text-gray-700 text-center mb-8" 
+          className="text-2xl text-gray-700 text-center mb-8" 
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -80,6 +82,7 @@ const AboutUs = () => {
         >
           Our team of seasoned professionals is dedicated to delivering the highest standard of beauty services.
         </motion.p>
+        <br></br>
         <div className="flex flex-wrap justify-center gap-6 mb-12">
           {[
             { name: "Jane Doe", role: "Lead Stylist", img: "https://via.placeholder.com/150" },
@@ -96,15 +99,15 @@ const AboutUs = () => {
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
               <img src={member.img} alt={member.name} className="rounded-full w-32 h-32 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-orange-600 text-center">{member.name}</h3>
-              <p className="text-gray-600 text-center">{member.role}</p>
+              <h3 className="text-3xl font-semibold text-orange-400 text-center">{member.name}</h3>
+              <p className="text-xl text-gray-600 text-center">{member.role}</p>
             </motion.div>
           ))}
         </div>
-
+        <br></br>
         {/* Location Section */}
         <motion.h2 
-          className="text-4xl font-bold text-center mb-6 text-orange-700" 
+          className="text-5xl font-bold text-center mb-6 text-orange-400" 
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -113,7 +116,7 @@ const AboutUs = () => {
           Visit Us
         </motion.h2>
         <motion.p 
-          className="text-lg text-gray-700 text-center mb-6" 
+          className="text-2xl text-gray-700 text-center mb-6" 
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -121,6 +124,7 @@ const AboutUs = () => {
         >
           Conveniently located in the heart of Pune, experience the best in beauty at Orange Ladies Beauty Parlour.
         </motion.p>
+        <br></br>
         <div className="h-96 w-full rounded-lg overflow-hidden relative flex justify-center items-center">
           <iframe
             title="Google Map"
@@ -134,7 +138,9 @@ const AboutUs = () => {
           ></iframe>
         </div>
       </div>
+      <br></br><br></br>
     </section>
+    
   );
 };
 

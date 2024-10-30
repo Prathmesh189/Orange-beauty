@@ -17,7 +17,7 @@ const BannerSection = () => {
 
   return (
     <section
-      className="banner-section h-[50vh] flex items-center justify-center bg-cover bg-center text-white"
+      className="banner-section h-[70vh] flex items-center justify-center bg-cover bg-center text-white"
       style={{ backgroundImage: `url(${bannerImage})` }} // Use the imported image
       ref={ref} // Attach ref to the section
     >
@@ -38,7 +38,7 @@ const BannerSection = () => {
         Exclusive Offer for 
         </motion.h1>
         <motion.h1
-          className="text-3xl md:text-4xl font-bold mb-2 text-orange-600"
+          className="text-3xl md:text-4xl font-bold mb-2"
           variants={fadeIn}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'} // Trigger animation based on inView
@@ -56,7 +56,7 @@ const BannerSection = () => {
           Enjoy UP TO 50% OFF on Your First Visit!
         </motion.p>
         <motion.button
-          className="px-6 py-2 bg-white text-black font-semibold rounded shadow hover:bg-orange-600 hover:text-white transition duration-300"
+          className="px-6 py-2 text-white font-semibold rounded shadow bg-orange-600 hover:text-black transition duration-300"
           variants={fadeIn}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'} // Trigger animation based on inView

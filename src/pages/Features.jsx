@@ -77,7 +77,7 @@ const Features = () => {
         >
           Our Features
         </motion.h1>
-        <br />
+        <br /><br></br>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-16">
           {features.map((feature) => (
             <motion.div
@@ -88,11 +88,15 @@ const Features = () => {
               animate={isInView ? 'visible' : 'hidden'} // Animate based on inView
               transition={{ duration: 0.5, delay: feature.id * 0.1 }}
             >
+              <br></br>
               <div className="text-6xl mb-4">
                 <FontAwesomeIcon icon={feature.icon} />
               </div>
-              <h3 className="text-2xl font-semibold mb-3 text-orange-600">{feature.title}</h3>
-              <p className="text-gray-600 mb-6">{feature.description}</p>
+              <br></br>
+              <h3 className="text-2xl font-semibold mb-3 text-orange-400">{feature.title}</h3>
+              <br></br>
+              <p className="text-gray-600 text-xl mb-6">{feature.description}</p>
+              <br></br>
               <button className="bg-orange-500 text-white font-semibold py-2 px-5 rounded-full hover:bg-orange-400 transition-colors">
                 Learn More
               </button>
@@ -110,7 +114,7 @@ const Features = () => {
         >
           Our Specialties
         </motion.h2>
-        <br />
+        <br /><br></br>
         <div className="grid gap-10 md:gap-12 md:grid-cols-2 lg:grid-cols-4">
           {industries.map((industry, index) => (
             <motion.div
@@ -123,9 +127,10 @@ const Features = () => {
             >
               <span className="text-6xl mb-4">
                 <FontAwesomeIcon icon={industry.icon} />
-              </span>
-              <h3 className="text-2xl font-semibold mb-3 text-orange-600">{industry.title}</h3>
-              <p className="text-gray-600 mb-6">{industry.description}</p>
+              </span><br></br>
+              <h3 className="text-3xl font-semibold mb-3 text-orange-400">{industry.title}</h3>
+              <br></br>
+              <p className="text-gray-600 text-xl mb-7">{industry.description}</p>
             </motion.div>
           ))}
         </div>

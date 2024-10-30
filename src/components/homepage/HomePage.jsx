@@ -5,13 +5,13 @@ import BannerSection from './BannerSection';
 import Features from '../../pages/Features';
 
 // Import the background image
-import hero2 from '../../images/hero2.jpg'; // Adjust the path as necessary
+//import hero2 from '../../images/hero2.jpg'; // Adjust the path as necessary
 
 const HomePage = () => {
   return (
     <div
       className="homepage font-sans text-gray-900 bg-cover bg-center"
-      style={{ backgroundImage: `url(${hero2})` }} // Set the background image
+    // Set the background image
     >
       <HeroSection />
       <ServicesCarousel />

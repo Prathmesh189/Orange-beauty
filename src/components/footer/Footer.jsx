@@ -3,7 +3,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Footer = () => {
   return (
-    <footer className="bg-orange-500 text-white py-10">
+    <footer className="bg-orange-400 text-white py-10">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
           {/* Company Info */}
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-orange-400 text-center py-4 mt-8">
+      <div className="bg-orange-500 text-center py-4 mt-8">
         <p className="text-sm">&copy; {new Date().getFullYear()} Powered by Sync solution</p>
       </div>
     </footer>

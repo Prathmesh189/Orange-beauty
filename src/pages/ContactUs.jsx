@@ -44,7 +44,7 @@ const ContactUs = () => {
     <section ref={ref} className="py-20 bg-gradient-to-b from-orange-50 to-white">
       <div className="container mx-auto max-w-4xl">
         <motion.h2
-          className="text-4xl font-bold text-center text-orange-400 mb-6"
+          className="text-5xl font-bold text-center text-orange-400 mb-6"
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'} // Animate based on inView state
           variants={fadeInUp}
@@ -52,11 +52,11 @@ const ContactUs = () => {
         >
           Contact Us
         </motion.h2>
-        <p className="text-center text-gray-600 mb-6">
+        <p className="text-xl text-center text-gray-600 mb-6">
           At Orange Ladies Beauty Parlour, we are here to make your beauty journey smooth and memorable. Whether you have
           questions about our services, we’d love to hear from you!
         </p>
-
+         <br></br>
         {/* Form Section */}
         <div className="bg-white p-8 shadow-lg rounded-lg">
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -106,20 +106,20 @@ const ContactUs = () => {
             {error && <p className="text-red-500">Failed to send message. Please try again.</p>}
           </form>
         </div>
-
+        <br></br>
         {/* Contact Information */}
         <div className="mt-12 flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-8 md:space-y-0">
           <div className="flex flex-col items-center md:items-start">
             <span className="text-2xl text-orange-500 font-bold">📞</span>
-            <p className="text-gray-800 mt-2">+1 234 567 890</p>
+            <p className="text-xl text-gray-800 mt-2">+1 234 567 890</p>
           </div>
           <div className="flex flex-col items-center md:items-start">
             <span className="text-2xl text-orange-500 font-bold">📧</span>
-            <p className="text-gray-800 mt-2">contact@orangeladies.com</p>
+            <p className="text-xl text-gray-800 mt-2">contact@orangeladies.com</p>
           </div>
           <div className="flex flex-col items-center md:items-start">
             <span className="text-2xl text-orange-500 font-bold">📍</span>
-            <p className="text-gray-800 mt-2">123 Glam Avenue, Beauty City</p>
+            <p className="text-xl text-gray-800 mt-2">123 Glam Avenue, Beauty City</p>
           </div>
         </div>
       </div>
