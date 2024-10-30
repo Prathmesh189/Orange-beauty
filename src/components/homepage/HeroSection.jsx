@@ -1,15 +1,11 @@
-// src/components/homepage/HeroSection.jsx
 import React, { useRef } from 'react';
-import { motion, useInView } from 'framer-motion'; // Import useInView from framer-motion
-
-// Import the image directly if you encounter issues with the relative path
-import heroImage from '../../images/hero.jpg';
+import { motion, useInView } from 'framer-motion';
+import heroImage from '../../images/hero.png';
 
 const HeroSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true }); // Check if the component is in view
+  const isInView = useInView(ref, { once: true });
 
-  // Define animation variants
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
@@ -17,43 +13,44 @@ const HeroSection = () => {
 
   return (
     <section
-      className="hero-section h-[80vh] flex items-center justify-center bg-cover bg-center text-white"
-      style={{ backgroundImage: `url(${heroImage})` }} // Use the imported image
-      ref={ref} // Attach ref to the section
+      className="hero-section h-[80vh] flex items-center justify-end bg-cover bg-center text-white px-8 md:px-20"
+      style={{ backgroundImage: `url(${heroImage})` }}
+      ref={ref}
     >
       <motion.div
-        className="text-center max-w-md p-4 bg-black bg-opacity-50 rounded-lg"
+        className="text-right max-w-lg p-6 bg-black bg-opacity-60 rounded-lg"
         initial="hidden"
-        animate={isInView ? 'visible' : 'hidden'} // Trigger animation based on inView
+        animate={isInView ? 'visible' : 'hidden'}
         variants={fadeIn}
-        transition={{ duration: 0.5 }} // Animation duration
+        transition={{ duration: 0.5 }}
       >
         <motion.h1
-          className="text-4xl md:text-5xl font-bold mb-4"
+          className="text-5xl md:text-6xl font-extrabold mb-2 leading-tight"
           variants={fadeIn}
-          initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'} // Trigger animation based on inView
-          transition={{ duration: 0.5, delay: 0.2 }} // Delay for the heading
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Unleash Your Inner Beauty
+          Embrace Your
+        </motion.h1>
+        <motion.h1
+          className="text-5xl md:text-6xl font-extrabold text-orange-600 mb-4 leading-tight"
+          variants={fadeIn}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          True Beauty
         </motion.h1>
         <motion.p
-          className="text-lg md:text-xl mb-6"
+          className="text-lg md:text-xl mb-6 font-light"
           variants={fadeIn}
-          initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'} // Trigger animation based on inView
-          transition={{ duration: 0.5, delay: 0.4 }} // Delay for the paragraph
+          transition={{ duration: 0.5, delay: 0.4 }}
         >
-          Experience luxurious pampering with our expert beauty services. From stunning hair transformations to rejuvenating skincare treatments, we’ve got everything you need to look and feel your best!
+          Indulge in a world of luxurious beauty treatments designed to reveal the best version of you. Let our expert team pamper you with transformative care and rejuvenating experiences.
         </motion.p>
         <motion.button
-          className="px-6 py-3 bg-white text-black font-semibold rounded shadow hover:bg-green-800 hover:text-white transition duration-300"
+          className="px-8 py-3 bg-orange-600 text-white font-semibold rounded-full shadow-lg hover:bg-white hover:text-orange-600 transition duration-300"
           variants={fadeIn}
-          initial="hidden"
-          animate={isInView ? 'visible' : 'hidden'} // Trigger animation based on inView
-          transition={{ duration: 0.5, delay: 0.6 }} // Delay for the button
+          transition={{ duration: 0.5, delay: 0.6 }}
         >
-          Explore More
+          Discover Now
         </motion.button>
       </motion.div>
     </section>

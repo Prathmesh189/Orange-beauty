@@ -69,7 +69,7 @@ const Features = () => {
         
         {/* Features Section */}
         <motion.h1 
-          className="text-5xl font-bold text-center mb-6 text-orange-700" 
+          className="text-5xl font-bold text-center mb-6 text-orange-400" 
           variants={fadeInUp}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'} // Animate based on inView
@@ -102,7 +102,7 @@ const Features = () => {
         <br />
         {/* Industries Section */}
         <motion.h2 
-          className="text-5xl font-bold text-center mb-6 text-orange-700" 
+          className="text-5xl font-bold text-center mb-6 text-orange-400" 
           variants={fadeInUp}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'} // Animate based on inView

@@ -44,7 +44,7 @@ const ContactUs = () => {
     <section ref={ref} className="py-20 bg-gradient-to-b from-orange-50 to-white">
       <div className="container mx-auto max-w-4xl">
         <motion.h2
-          className="text-4xl font-bold text-center text-orange-700 mb-6"
+          className="text-4xl font-bold text-center text-orange-400 mb-6"
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'} // Animate based on inView state
           variants={fadeInUp}

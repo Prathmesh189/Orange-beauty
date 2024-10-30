@@ -13,7 +13,7 @@ const AboutUs = () => {
       <div className="max-w-7xl mx-auto">
         {/* Title and Introduction */}
         <motion.h1 
-          className="text-5xl font-bold text-center mb-6 text-orange-700" 
+          className="text-5xl font-bold text-center mb-6 text-orange-600" 
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -55,7 +55,7 @@ const AboutUs = () => {
               animate="visible"
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
-              <h2 className="text-2xl font-semibold text-orange-700 mb-4">{item.title}</h2>
+              <h2 className="text-2xl font-semibold text-orange-600 mb-4">{item.title}</h2>
               <p className="text-gray-600">{item.description}</p>
             </motion.div>
           ))}
@@ -63,7 +63,7 @@ const AboutUs = () => {
 
         {/* Meet Our Team Section */}
         <motion.h2 
-          className="text-4xl font-bold text-center mb-6 text-orange-700" 
+          className="text-4xl font-bold text-center mb-6 text-orange-600" 
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
@@ -96,7 +96,7 @@ const AboutUs = () => {
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
               <img src={member.img} alt={member.name} className="rounded-full w-32 h-32 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-orange-700 text-center">{member.name}</h3>
+              <h3 className="text-xl font-semibold text-orange-600 text-center">{member.name}</h3>
               <p className="text-gray-600 text-center">{member.role}</p>
             </motion.div>
           ))}

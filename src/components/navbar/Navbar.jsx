@@ -10,9 +10,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-900 text-white px-6 py-4 flex items-center justify-between border-b border-gray-600">
+    <nav className="bg-orange-500 text-white px-6 py-4 flex items-center justify-between border-b border-gray-600">
       <div className="flex items-center">
-        <img src={logo} alt="Company Logo" className="h-12 mr-6" /> {/* Use the imported logo */}
+        <img src={logo} alt="Company Logo" className="h-14 mr-6" /> {/* Use the imported logo */}
         <button
           className="lg:hidden text-2xl focus:outline-none"
           onClick={toggleMenu}
@@ -26,22 +26,22 @@ const Navbar = () => {
         }`}
       >
         <li>
-          <Link to="/" className="block py-2 lg:py-0 hover:text-orange-600">
+          <Link to="/" className="block py-2 lg:py-0 hover:text-gray-600">
             Home
           </Link>
         </li>
         <li>
-          <Link to="/aboutus" className="block py-2 lg:py-0 hover:text-orange-600">
+          <Link to="/aboutus" className="block py-2 lg:py-0 hover:text-gray-600">
             About Us
           </Link>
         </li>
         <li>
-          <Link to="/features" className="block py-2 lg:py-0 hover:text-orange-600">
+          <Link to="/features" className="block py-2 lg:py-0 hover:text-gray-600">
             Features
           </Link>
         </li>
         <li>
-          <Link to="/contactus" className="block py-2 lg:py-0 hover:text-orange-600">
+          <Link to="/contactus" className="block py-2 lg:py-0 hover:text-gray-600">
             Contact Us
           </Link>
         </li>

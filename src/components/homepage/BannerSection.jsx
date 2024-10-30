@@ -22,7 +22,7 @@ const BannerSection = () => {
       ref={ref} // Attach ref to the section
     >
       <motion.div
-        className="text-center max-w-md p-4 bg-black bg-opacity-50 rounded-lg"
+        className="text-center max-w-md p-4 bg-black bg-opacity-0 rounded-lg"
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'} // Trigger animation based on inView
         variants={fadeIn}
@@ -35,7 +35,16 @@ const BannerSection = () => {
           animate={isInView ? 'visible' : 'hidden'} // Trigger animation based on inView
           transition={{ duration: 0.5, delay: 0.2 }} // Delay for the heading
         >
-          🌟 Exclusive Offer for New Clients! 🌟
+        Exclusive Offer for 
+        </motion.h1>
+        <motion.h1
+          className="text-3xl md:text-4xl font-bold mb-2 text-orange-600"
+          variants={fadeIn}
+          initial="hidden"
+          animate={isInView ? 'visible' : 'hidden'} // Trigger animation based on inView
+          transition={{ duration: 0.5, delay: 0.2 }} // Delay for the heading
+        >
+        New Clients!
         </motion.h1>
         <motion.p
           className="text-lg md:text-xl mb-4"
@@ -47,7 +56,7 @@ const BannerSection = () => {
           Enjoy UP TO 50% OFF on Your First Visit!
         </motion.p>
         <motion.button
-          className="px-6 py-2 bg-white text-black font-semibold rounded shadow hover:bg-green-800 hover:text-white transition duration-300"
+          className="px-6 py-2 bg-white text-black font-semibold rounded shadow hover:bg-orange-600 hover:text-white transition duration-300"
           variants={fadeIn}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'} // Trigger animation based on inView
