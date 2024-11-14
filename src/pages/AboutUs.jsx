@@ -85,10 +85,10 @@ const AboutUs = () => {
         <br></br>
         <div className="flex flex-wrap justify-center gap-6 mb-12">
           {[
-            { name: "Jane Doe", role: "Lead Stylist", img: "https://via.placeholder.com/150" },
-            { name: "John Smith", role: "Makeup Artist", img: "https://via.placeholder.com/150" },
-            { name: "Emily Johnson", role: "Nail Technician", img: "https://via.placeholder.com/150" },
-            { name: "Sarah Lee", role: "Skincare Specialist", img: "https://via.placeholder.com/150" },
+            { name: "Jane Doe", role: "Lead Stylist", img: "https://img.freepik.com/premium-photo/photo-25-year-old-german-business-man-smiling-brown-hair-full-body-standing-office_935552-10515.jpg?w=2000" },
+            { name: "Asaf Sah", role: "Makeup Artist", img: "https://sc-events.s3.amazonaws.com/31053/8395895/95412a81036feee2080e7c6802a5f50b831e6dbd4a5a1671e8f41dceed22d0ee/ee405d3f-332a-43c2-9256-0c37713476fb.jpg" },
+            { name: "Tina John", role: "Nail Technician", img: "https://i.pinimg.com/originals/60/e0/3b/60e03b25d0829ec560b3f472e84cd23a.jpg" },
+            { name: "Sarah Lee", role: "Skincare Specialist", img: "https://uploads.concordia.net/2022/08/31115105/HRH-Queen-Rania-scaled.jpeg" },
           ].map((member, index) => (
             <motion.div
               key={index}

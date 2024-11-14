@@ -22,9 +22,7 @@ const Footer = () => {
           <div className="w-full sm:w-1/2 lg:w-1/3 mb-8">
             <h4 className="text-lg font-bold mb-4">For customers</h4>
             <ul>
-              <li><a href="#reviews" className="hover:text-gray-600">UC reviews</a></li>
               <li><a href="#categories" className="hover:text-gray-600">Categories near you</a></li>
-              <li><a href="#blog" className="hover:text-gray-600">Blog</a></li>
               <li><a href="/contactus" className="hover:text-gray-600">Contact us</a></li>
             </ul>
           </div>

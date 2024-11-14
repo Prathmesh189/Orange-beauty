@@ -2,6 +2,7 @@ import React from 'react';
 import HeroSection from './HeroSection';
 import ServicesCarousel from './ServicesCarousel';
 import BannerSection from './BannerSection';
+//import FixedIcons from './FixedIcons';
 import Features from '../../pages/Features';
 
 // Import the background image
@@ -18,7 +19,7 @@ const HomePage = () => {
       <BannerSection />
       {/*<IndustriesSection />*/}
       <Features />
-     
+      {/*<FixedIcons />*/}
     </div>
   );
 };

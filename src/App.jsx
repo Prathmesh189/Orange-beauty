@@ -6,6 +6,7 @@ import Features from './pages/Features';
 import ContactUs from './pages/ContactUs';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
+import FixedIcons from './components/homepage/FixedIcons';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <FixedIcons />
       </div>
     </Router>
   );
